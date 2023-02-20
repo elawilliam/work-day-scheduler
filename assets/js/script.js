@@ -21,4 +21,30 @@ $(function () {
     //
     // TODO: Add code to display the current date in the header of the page.
   });
+var time = [
+  "09:00",
+  "10:00",
+  "11:00",
+  "12:00",
+  "13:00",
+  "14:00",
+  "15:00",
+  "16:00",
+  "17:00"
+]
+
+var timeCheck = day.js().format("HH:mm")
+
+for (var i = 0; i < time.length; i++){
+  if (time[i] === timeCheck){
+    $(`#${time[i]}`)
+  }
+}
+
+  // Need to write a loop to render html and create time blocks from 9am - 5pm //
+// Array to store times in military time //
+
+//Creates the date format using day.js //
+//<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+//<script>dayjs().format()</script>//
   
