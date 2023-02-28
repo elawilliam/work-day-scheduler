@@ -7,7 +7,7 @@ $(document).ready(function () {
 //Event listener for clicking the save button//
 $(".saveBtn").on("click", function (){
   var eventText = $(this).siblings(".description").val();
-  var eventText = $(this).parent().attr("id");
+  var eventTime = $(this).parent().attr("id");
 
 //Saving to local storage//
   localStorage.setItem(eventTime, eventText);
